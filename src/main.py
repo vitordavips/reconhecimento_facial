@@ -21,7 +21,11 @@ while True:
             #desenhar os rostos na imagem
             desenho.draw_detection(frame, rosto)
 
+        cv2.imshow("Rostos na webcam", frame)
+        
         #quando apertar ESC, para o loop
+        if cv2.waitKey(5) == 27:
+            break
 webcam.release()
 
 
