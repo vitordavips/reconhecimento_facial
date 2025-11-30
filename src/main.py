@@ -27,7 +27,7 @@ while True:
         if cv2.waitKey(5) == 27:
             break
 webcam.release()
-
+cv2.destroyAllWindows()
 
 
 
